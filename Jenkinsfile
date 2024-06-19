@@ -2,21 +2,21 @@ pipeline {
     agent {
         label 'AGENT-1'
     }
-    stages {
+     stages {
         stage('Build') {
-            step {
+            steps {
                 sh 'echo This is build'
             }
-        }    
+        }
         stage('Test') {
-            step {
+            steps {
                 sh 'echo This is Test'
             }
         }
-        stage( 'Deploy') {
-            step {
-                 sh 'echo This is Deploy'
+        stage('Deploy') {
+            steps {
+                sh 'echo This is Deploy'
             }
         }
-    }    
-}
+     }
+}    
